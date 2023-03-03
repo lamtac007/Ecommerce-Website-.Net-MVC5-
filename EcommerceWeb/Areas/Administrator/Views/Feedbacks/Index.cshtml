@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Encommerce_Model.Feedback>
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<p>
+   
+    @using (Html.BeginForm("Index", "Feedbacks", FormMethod.Get))
+    {
+    <p>
+        Title: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+</p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeedbackContent)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FeedbackContent)
+                </td>
+                <td>
+                  
+                    @Html.ActionLink("Details", "Details", new { id = item.ID_Fed }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID_Fed })
+                </td>
+            </tr>
+        }
+
+    </table>

@@ -1,0 +1,52 @@
+﻿.field-validation-error{
+    color:red;
+}
+body{
+    background-color:azure;
+    font-family:sans-serif;
+    text-align:center;
+}
+.from-register{
+    text-align:center;
+
+   
+}
+div{
+    text-align:center;
+}
+table{
+    width: 350px;
+    height:400px;
+    background-color:white;
+    border: 1px solid gray;
+    border-radius:10px;
+    text-align:center;
+    display: inline-block;
+
+
+}
+
+caption{
+    font-size:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tr{
+    text-align:center;
+}
+.title-form{
+    font-size:20px;
+    text-align:center;
+   border-left-style:none;
+   
+}
+
+.td{
+    text-align:left;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+#filled{
+    width: 100px;
+    height:20px;
+}

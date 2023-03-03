@@ -1,0 +1,35 @@
+﻿@model Encommerce_Model.Order
+
+@{
+    ViewBag.Title = "ShowToCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Order Details</h2>
+
+@*@if(Model != null)
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ProductName</th>
+                            <th>Image</th>
+                            <th>Pricce</th>
+                            <th>Amount</th>
+                            <th>Sum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model.Items)
+                        {
+                            double total = Convert.ToDouble(item.product.UnitPrie.Value * item.Amount);
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(model => model.Product.ProductName)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>*@
+
+            }

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32407.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcommerceWeb", "EcommerceWeb\EcommerceWeb.csproj", "{38FB9EE9-2355-4AC2-B3C9-0E7333B0743B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encommerce_Model", "Encommerce_Model\Encommerce_Model.csproj", "{31B2F873-5EB4-4A99-8493-8067CEDCDE9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38FB9EE9-2355-4AC2-B3C9-0E7333B0743B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FB9EE9-2355-4AC2-B3C9-0E7333B0743B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FB9EE9-2355-4AC2-B3C9-0E7333B0743B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FB9EE9-2355-4AC2-B3C9-0E7333B0743B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B2F873-5EB4-4A99-8493-8067CEDCDE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B2F873-5EB4-4A99-8493-8067CEDCDE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B2F873-5EB4-4A99-8493-8067CEDCDE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B2F873-5EB4-4A99-8493-8067CEDCDE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04A635B1-4F9C-47D9-9917-B5633E215C09}
+	EndGlobalSection
+EndGlobal

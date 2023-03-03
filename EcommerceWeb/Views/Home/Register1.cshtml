@@ -1,0 +1,103 @@
+﻿@model Encommerce_Model.User
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery-1.9.0.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery-1.9.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvs/5.2.3/jquery.validate.unobtrusive.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="~/Content/StyleSheet1.css" />
+</head>
+
+<body style="text-align:center">
+    <div >
+        @using (Html.BeginForm("Register1", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+        <table class="text">
+            <caption class="caption">Register</caption>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr class="title-form">
+                <th style="text-align:center"></th>
+            </tr>
+            <tr>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.UserName)</td>
+                <td class="filled" style="text-align:right">@Html.TextBoxFor(m => m.UserName)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.UserName)</td></tr>
+            <tr>
+                <td style="text-align:left">@Html.LabelFor(m => m.PhoneNumber)</td>
+                <td class="filled">@Html.TextBoxFor(m => m.PhoneNumber)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.PhoneNumber)</td></tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Address)</td>
+                <td class="filled">@Html.TextBoxFor(m => m.Address)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.Address)</td></tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.DateOfBirth)</td>
+                <td class="filled">@Html.TextBoxFor(m => m.DateOfBirth)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.DateOfBirth)</td></tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Gender)</td>
+                <td class="filled">@Html.TextBoxFor(m => m.Gender)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.Gender)</td></tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Email)</td>
+                <td class="filled">@Html.TextBoxFor(m => m.Email)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.Email)</td></tr>
+            <tr>
+                <td colspan="2">
+                    @if (ViewBag.error != null)
+                    {
+                        <span class="field-validation-error">@ViewBag.error</span>
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Password)</td>
+                <td class="filled">@Html.PasswordFor(m => m.Password)</td>
+            </tr>
+            <tr><td colspan="2">@Html.ValidationMessageFor(m => m.Password)</td></tr>
+           
+            <tr>
+                <td>
+                <td>
+                </td>
+                </td>
+            </tr>
+            <tr style="text-align:center">
+                <td>
+                <td>
+                    <input type="submit" value="Register" />
+                    <input type="reset" value="Reset" />
+                </td>
+                </td>
+            </tr>
+        </table>
+        }
+    </div>
+</body>
+</html>

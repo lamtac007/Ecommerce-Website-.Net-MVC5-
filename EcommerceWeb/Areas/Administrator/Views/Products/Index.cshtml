@@ -1,0 +1,114 @@
+﻿@model IEnumerable<Encommerce_Model.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Html.ActionLink("Create New Product", "Create", "Products")<a><i class="fa fa-plus-circle"></i></a></h2>
+<br />
+<p>
+    @using (Html.BeginForm("Index", "Products", FormMethod.Get))
+    {
+<p>
+    CategoryName: @Html.DropDownList("searchCategory", "All")
+    Origin: @Html.DropDownList("searchOrigin", "All")
+    ProductName: @Html.TextBox("searchString")
+    <input type="submit" value="Search" />
+</p>
+    }
+</p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Origin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sale)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PriceF)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.DateManufacture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpirationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionDTS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Update)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            <img src="~/Content/images/@item.Image" width="70px" height="60px" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sale)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.PriceF)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.DateManufacture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpirationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescriptionDTS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Update)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID_Product }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID_Product }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID_Product })
+        </td>
+    </tr>
+        }
+
+    </table>

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Encommerce_Model.Product>
+
+@{
+    ViewBag.Title = "All Products";
+}
+
+<h2>PRODUCTS</h2>
+<p>
+    @using (Html.BeginForm("Index", "Products", FormMethod.Get))
+    {
+    <p>
+        <br />
+        CategoryName: @Html.DropDownList("searchCategory", "All")
+        Origin: @Html.DropDownList("searchOrigin", "All")
+        ProductName: @Html.TextBox("searchString")
+        <input type="submit" value="Search" />
+
+    </p>
+}
+    </p>
+    <br />
+    @*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Origin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateManufacture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpirationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionDTS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Update)
+            </th>
+            <th></th>
+        </tr>*@
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 top_brand_left">
+            <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                    <div class="tag"><img src="~/Content/images/tag.png" alt=" " class="img-responsive" /></div>
+                    <div class="agile_top_brand_left_grid1">
+                        <figure>
+                            <div class="snipcart-item block">
+                                <div class="snipcart-thumb">
+                                    <a href="single.html"><img title=" " alt=" " src="~/Content/images/@item.Image" width="200" height="150" /></a>
+                                    <p>@item.ProductName</p>
+                                    <h4>$@item.Price <br />Discount: $@item.Sale @Html.ActionLink("Details", "Details", new { id = item.ID_Product })</h4>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details">
+                                    <form action="checkout.html" method="post">
+                                        <form action="checkout.html" method="post">
+                                            <fieldset>
+                                                <input type="hidden" name="cmd" value="_cart" />
+                                                <input type="hidden" name="add" value="1" />
+                                                <input type="hidden" name="business" value=" " />
+                                                <input type="hidden" name="item_name" value="@item.ProductName" />
+                                                <input type="hidden" name="amount" value="@item.Price" />
+                                                <input type="hidden" name="discount_amount" value="@item.Sale" />
+                                                <input type="hidden" name="currency_code" value="USD" />
+                                                <input type="hidden" name="return" value=" " />
+                                                <input type="hidden" name="cancel_return" value=" " />
+                                                <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            </fieldset>
+
+                                        </form>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+

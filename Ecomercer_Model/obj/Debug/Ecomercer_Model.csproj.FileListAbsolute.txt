@@ -1,0 +1,12 @@
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\Ecomercer_Model.dll.config
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\Ecomercer_Model.dll
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\Ecomercer_Model.pdb
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\EntityFramework.dll
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\EntityFramework.xml
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\obj\Debug\Ecomercer_Model.csproj.AssemblyReference.cache
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\obj\Debug\Ecomercer_Model.csproj.CoreCompileInputs.cache
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\obj\Debug\Ecomercer_Model.csproj.CopyComplete
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\obj\Debug\Ecomercer_Model.dll
+F:\WEB_LAB\EcommerceWeb\Ecomercer_Model\obj\Debug\Ecomercer_Model.pdb

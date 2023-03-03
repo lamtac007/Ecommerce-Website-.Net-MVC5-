@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="col-md-3 top_brand_left">
+    <div class="hover14 column">
+        <div class="agile_top_brand_left_grid">
+            <div class="tag"><img src="~/Content/images/tag.png" alt=" " class="img-responsive" /></div>
+            <div class="agile_top_brand_left_grid1">
+                <figure>
+                    <div class="snipcart-item block">
+                        <div class="snipcart-thumb">
+                            <a href="single.html"><img title=" " alt=" " src="~/Content/images/Arti.jpg" /></a>
+                            <p>Artichoken</p>
+                            <h4>$31.9 <span>$34.00</span></h4>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details">
+                            <form action="checkout.html" method="post">
+                                <fieldset>
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="business" value=" " />
+                                    <input type="hidden" name="item_name" value="Artichokei" />
+                                    <input type="hidden" name="amount" value="34" />
+                                    <input type="hidden" name="discount_amount" value="1.00" />
+                                    <input type="hidden" name="currency_code" value="USD" />
+                                    <input type="hidden" name="return" value=" " />
+                                    <input type="hidden" name="cancel_return" value=" " />
+                                    <input type="submit" name="submit" value="Add to cart" class="button" />
+                                </fieldset>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>

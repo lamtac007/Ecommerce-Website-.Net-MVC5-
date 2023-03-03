@@ -1,0 +1,4 @@
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Ecommerce_Model.csproj.AssemblyReference.cache
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Ecommerce_Model.csproj.CoreCompileInputs.cache
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.dll
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.pdb

@@ -1,0 +1,31 @@
+﻿@model List<Encommerce_Model.Category>
+    @{ 
+        foreach(var item in Model)
+            {
+                <li><a onclick="Sach('@item.ID_Category')">@item.CategoryName</a></li>
+            }
+    }
+<script>
+    function Product(s) {
+        $.getJSON('https://localhost:44366/Home/CategoryProduct?ID_Category=' + s, function (data) {
+            var table = '';
+            for (i = 0; i < data.length; i++) {
+                table += '<tr>';
+                table += '<td>' + data[i].ID_Product + '</td>';
+                table += '<td>' + data[i].ProductName + '</td>';
+                table += '<img src="images/${data[i].Image}" with="50px" height="50">';
+                table += '<td>' + data[i].Origin + '</td>';
+                table += '<td>' + data[i].Price + '</td>';
+                table += '<td>' + data[i].Unit + '</td>';
+                table += '<td>' + data[i].Sale + '</td>';
+                table += '<td>' + data[i].DateManufacture + '</td>';
+                table += '<td>' + data[i].ExpirationDate + '</td>';
+                table += '<td>' + data[i].Description + '</td>';
+                table += '<td>' + data[i].DescriptionDTS + '</td>';
+                table += '<td>' + data[i].Update + '</td>';
+                table += '</tr>';
+            }
+            $('#Product').html(table);
+        });
+    }
+</script>

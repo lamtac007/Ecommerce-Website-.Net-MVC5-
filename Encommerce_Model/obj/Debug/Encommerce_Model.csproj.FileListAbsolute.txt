@@ -1,0 +1,14 @@
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\Encommerce_Model.dll.config
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\Encommerce_Model.dll
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\Encommerce_Model.pdb
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\EntityFramework.dll
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\EntityFramework.xml
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.csproj.AssemblyReference.cache
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.csproj.CoreCompileInputs.cache
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.csproj.CopyComplete
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.dll
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.pdb
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.Migrations.Initial.resources
+F:\WEB_LAB\EcommerceWeb\Encommerce_Model\obj\Debug\Encommerce_Model.csproj.GenerateResource.cache
